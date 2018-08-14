@@ -5,8 +5,196 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+    <header class="main-header">
+      <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина Глэйси">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li><a href="#">Поиск</a></li>
+          <li><a href="#">Вход</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <p class="contacts-info">
+        С 10 до 20, ежедневно<br>
+        8 812 450-25-25
+      </p>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин мороженного</h1>
+      <section class="slider">
+        <h2 class="visually-hidden">Выбор покупателя</h2>
+        <ul class="slider-list">
+          <li>
+            <h3>Крем-брюле и пломбир с малиновым джемом</h3>
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+          <li>
+            <h3>Шоколадный пломбир и лимонный сорбет</h3>
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+          <li>
+            <h3>Пломбир с помадкой и клубничный щербет</h3>
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+            <a class="button" href="#">Давайте оба!</a>
+          </li>
+        </ul>
+        <p class="slider-toggles">
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+        </p>
+      </section>
+      <section class="promotion">
+        <h2 class="visually-hidden">Акция</h2>
+        <ul class="promotion-list">
+          <li class="raspberry">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button" href="#">Хочу варенье!</a>
+          </li>
+          <li class="chocolate">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button" href="#">Хочу шоколадки!</a>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Хит продаж</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <a href="#">
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+              <p>
+                310 Р<span>/кг</span>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+              <p>
+                380 Р<span>/кг</span>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+              <p>
+                355 Р<span>/кг</span>
+              </p>
+            </a>
+          </li>
+          <li class="catalog-item">
+            <a href="#">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="img">
+              <p>
+                415 Р<span>/кг</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="features-lead">
+          Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого
+          собственного производства на развес
+        </p>
+        <ul class="features-list">
+          <li class="features-item">
+            <p>
+              Все наше мороженое изготавливается на собственном производстве,
+              с использованием современного оборудования и проверенных временем технологий.
+            </p>
+          </li>
+          <li class="features-item">
+            <p>
+              Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний,
+              с которыми нас связывает долговременное сотрудничество.
+            </p>
+          </li>
+          <li class="features-item">
+            <p>
+              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+              Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+            </p>
+          </li>
+          <li class="features-item">
+            <p>
+              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+              который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <article class="blog">
+        <h2 class="visually-hidden">Блог магазина мороженого Глэйси</h2>
+        <p>
+          <b>Новое в нашем блоге</b>
+          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </p>
+      </article>
+      <section class="subscribe">
+        <h2 class="visually-hidden">Подписка</h2>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <!-- Место для формы -->
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Наши координаты</h2>
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </section>
+      <section class="feedback-form">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p>
+          Адрес главного офиса<br>
+          и офлайн магазина:<br>
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        </p>
+        <p>
+          Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)
+        </p>
+        <a class="button" href="#">Форма обратной связи</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li><a href="#">Твиттер</a></li>
+        <li><a href="#">Инстаграмм</a></li>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">ВКонтакте</a></li>
+      </ul>
+      <ul class="documents-list">
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+      <div class="producer">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+        </a>
+        <p>
+          Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
