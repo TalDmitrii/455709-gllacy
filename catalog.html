@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <a href="index.html">
-        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина Глэйси">
+        <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -38,14 +41,14 @@
           <li><a href="#">Поиск</a></li>
           <li><a href="#">Вход</a></li>
           <li>
-            <a href="#"><b>2 товара</b></a>
+            <a href="#"><b class="order-content">2 товара</b></a>
             <table class="order visually-hidden">
               <tr>
                 <td>
                   <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
                 </td>
                 <td>
-                  <img src="img/ice-cream-order_1.jpg" width="33" height="33" alt="img">
+                  <img class="catalog-image" src="img/ice-cream-order_1.jpg" width="33" height="33" alt="img">
                 </td>
                 <td>
                   Пломбир с апельсиновым джемом
@@ -62,7 +65,7 @@
                   <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
                 </td>
                 <td>
-                  <img src="img/ice-cream-order_2.jpg" width="33" height="33" alt="img">
+                  <img class="catalog-image" src="img/ice-cream-order_2.jpg" width="33" height="33" alt="img">
                 </td>
                 <td>
                   Клубничный пломбир с присыпкой из белого шоколада
@@ -76,7 +79,7 @@
               </tr>
             </table>
             <div>
-              <b>Итого: 750 руб.</b>
+              <b class="order-price">Итого: 750 руб.</b>
               <a href="#" class="button" aria-label="Оформление вашего заказа">Оформить заказ</a>
             </div>
           </li>
@@ -84,7 +87,7 @@
       </nav>
       <p class="contacts-info">
         С 10 до 20, ежедневно<br>
-        8 812 450-25-25
+        <span>8 812 450-25-25</span>
       </p>
     </header>
     <main class="catalog">
@@ -94,7 +97,7 @@
         <li><a href="catalog.html" aria-label="Каталог мороженого">Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
         <label>
           Сортировка:
           <select name="sorting" aria-label="Сортировка продукции">
@@ -156,7 +159,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/ice-cream-1.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-1.jpg" width="267" height="267" alt="img">
             <p>
               310 Р<span>/кг</span>
             </p>
@@ -165,7 +168,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочно-кофейное с кусочками шоколада">
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            <img src="img/ice-cream-2.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-2.jpg" width="267" height="267" alt="img">
             <p>
               380 Р<span>/кг</span>
             </p>
@@ -174,7 +177,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочно-клубничное с присыпкой из белого шоколада">
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/ice-cream-3.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-3.jpg" width="267" height="267" alt="img">
             <p>
               355 Р<span>/кг</span>
             </p>
@@ -183,7 +186,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное крем-брюле с карамельной подливкой">
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            <img src="img/ice-cream-4.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-4.jpg" width="267" height="267" alt="img">
             <p>
               415 Р<span>/кг</span>
             </p>
@@ -192,7 +195,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное с брусничным джемом">
             <h3>Сливочное с брусничным джемом</h3>
-            <img src="img/ice-cream-5.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-5.jpg" width="267" height="267" alt="img">
             <p>
               325 Р<span>/кг</span>
             </p>
@@ -201,7 +204,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочно-черничное с цельными ягодами черники">
             <h3>Сливочно-черничное с цельными ягодами черники</h3>
-            <img src="img/ice-cream-6.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-6.jpg" width="267" height="267" alt="img">
             <p>
               410 Р<span>/кг</span>
             </p>
@@ -210,7 +213,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочно-лимонное с карамельной присыпкой">
             <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-            <img src="img/ice-cream-7.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-7.jpg" width="267" height="267" alt="img">
             <p>
               375 Р<span>/кг</span>
             </p>
@@ -219,7 +222,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное с шоколадной стружкой">
             <h3>Сливочное с шоколадной стружкой</h3>
-            <img src="img/ice-cream-8.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-8.jpg" width="267" height="267" alt="img">
             <p>
               320 Р<span>/кг</span>
             </p>
@@ -228,7 +231,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочно-ванильное с кусочками шоколада">
             <h3>Сливочно-ванильное с кусочками шоколада</h3>
-            <img src="img/ice-cream-9.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-9.jpg" width="267" height="267" alt="img">
             <p>
               440 Р<span>/кг</span>
             </p>
@@ -237,7 +240,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочноe с ментоловым сиропом">
             <h3>Сливочноe с ментоловым сиропом</h3>
-            <img src="img/ice-cream-10.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-10.jpg" width="267" height="267" alt="img">
             <p>
               435 Р<span>/кг</span>
             </p>
@@ -246,7 +249,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное с кусочками черного шоколада">
             <h3>Сливочное с кусочками черного шоколада</h3>
-            <img src="img/ice-cream-11.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-11.jpg" width="267" height="267" alt="img">
             <p>
               355 Р<span>/кг</span>
             </p>
@@ -255,7 +258,7 @@
         <li class="catalog-item">
           <a href="#" aria-label="Мороженное Сливочное с мятным сиропом">
             <h3>Сливочное с мятным сиропом</h3>
-            <img src="img/ice-cream-12.jpg" width="267" height="267" alt="img">
+            <img class="catalog-image" src="img/ice-cream-12.jpg" width="267" height="267" alt="img">
             <p>
               420 Р<span>/кг</span>
             </p>
@@ -287,7 +290,7 @@
       </ul>
       <div class="producer">
         <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Базовый интенсив html/css HTML Academy">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+          <img src="../img/logo-htmlacademy-small.svg" width="150" height="100" alt="HTML Academy">
         </a>
         <p>
           Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML Academy">HTML Academy</a> © 2017
