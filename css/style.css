@@ -1,7 +1,5 @@
 body {
-  width: 900px;
-
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
@@ -51,8 +49,13 @@ body {
   background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
 }
 
+.main-header {
+  width: 900px;
+
+  margin: 0 auto;
+}
+
 .index-page {
-  position: absolute;
   width: 900px;
   min-height: 881px;
 
@@ -185,8 +188,14 @@ body {
   line-height: 24px;
 }
 
+.container {
+  width: 900px;
+
+  margin: 0 auto;
+}
+
 .slider {
-  position: relative;
+  position: absolute;
   top: 83px;
   z-index: 1;
 }
@@ -257,8 +266,9 @@ body {
 
 .promotion {
   position: relative;
-  z-index: 4;
+  z-index: 2;
 
+  margin-top: -290px;
   margin-bottom: 40px;
 }
 
@@ -325,19 +335,20 @@ body {
   margin-right: 20px;
 }
 
-.catalog-list li {
-  width: 200px;
-}
-
 .catalog-item {
+  width: 200px;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  position: relative;
+
+  margin-bottom: 40px;
 
   text-decoration: none;
 }
 
 .catalog-item h3 {
   width: 191px;
+  order: 1;
 
   font-size: 16px;
   font-weight: 500;
@@ -347,12 +358,6 @@ body {
   text-align: center;
 
   margin: 0;
-}
-
-.catalog-item {
-  position: relative;
-
-  margin-bottom: 40px;
 }
 
 .catalog-item p {
@@ -372,7 +377,15 @@ body {
 }
 
 .catalog-image {
+  order: 0;
+
   border-radius: 140px 140px 140px 140px;
+}
+
+.quick-review {
+  order: 3;
+
+  display: none;
 }
 
 .features {
@@ -494,7 +507,10 @@ body {
 }
 
 .main-footer {
+  width: 900px;
   display: flex;
+
+  margin: 0 auto;
 }
 
 .social-list {
@@ -581,9 +597,12 @@ body {
   color: #323232;
 }
 
-.catalog {
+.catalog-page {
+  width: 900px;
   display: flex;
   flex-direction: column;
+
+  margin: 0 auto;
 }
 
 .breadcrumbs-wrapper {
