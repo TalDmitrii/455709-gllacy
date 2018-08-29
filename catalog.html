@@ -9,96 +9,102 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html">
-        <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
-      </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a href="catalog.html" class="current-page" aria-label="Каталог мороженого">Каталог</a>
-            <ul class="catalog-sub-menu visually-hidden">
+      <div class="header-wrapper">
+        <div class="navigation-wrapper">
+          <a href="index.html">
+            <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
+          </a>
+          <nav class="main-navigation">
+            <ul class="site-navigation">
               <li>
-                <a href="#" aria-label="Новинки"><b>Новинки</b></a>
+                <a href="catalog.html" class="current-page" aria-label="Каталог мороженого">Каталог</a>
+                <ul class="catalog-sub-menu visually-hidden">
+                  <li>
+                    <a href="#" aria-label="Новинки"><b>Новинки</b></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Сливочное мороженое">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Щербеты">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Фруктовый лёд">Фруктовый лёд</a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Мелорин">Мелорин</a>
+                  </li>
+                </ul>
               </li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">О компании</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li><a href="#">Поиск</a></li>
+              <li><a href="#">Вход</a></li>
               <li>
-                <a href="#" aria-label="Сливочное мороженое">Сливочное</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Щербеты">Щербеты</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Фруктовый лёд">Фруктовый лёд</a>
-              </li>
-              <li>
-                <a href="#" aria-label="Мелорин">Мелорин</a>
+                <a href="#"><b class="order-content">2 товара</b></a>
+                <table class="order visually-hidden">
+                  <tr>
+                    <td>
+                      <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
+                    </td>
+                    <td>
+                      <img class="catalog-image" src="img/ice-cream-order_1.jpg" width="33" height="33" alt="img">
+                    </td>
+                    <td>
+                      Пломбир с апельсиновым джемом
+                    </td>
+                    <td>
+                      1,5 кг х 200 руб.
+                    </td>
+                    <td>
+                      300 руб.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
+                    </td>
+                    <td>
+                      <img class="catalog-image" src="img/ice-cream-order_2.jpg" width="33" height="33" alt="img">
+                    </td>
+                    <td>
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td>
+                      1,5 кг х 300 руб.
+                    </td>
+                    <td>
+                      450 руб.
+                    </td>
+                  </tr>
+                </table>
+                <div>
+                  <b class="order-price">Итого: 750 руб.</b>
+                  <a href="#" class="button" aria-label="Оформление вашего заказа">Оформить заказ</a>
+                </div>
               </li>
             </ul>
-          </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="#">Поиск</a></li>
-          <li><a href="#">Вход</a></li>
-          <li>
-            <a href="#"><b class="order-content">2 товара</b></a>
-            <table class="order visually-hidden">
-              <tr>
-                <td>
-                  <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
-                </td>
-                <td>
-                  <img class="catalog-image" src="img/ice-cream-order_1.jpg" width="33" height="33" alt="img">
-                </td>
-                <td>
-                  Пломбир с апельсиновым джемом
-                </td>
-                <td>
-                  1,5 кг х 200 руб.
-                </td>
-                <td>
-                  300 руб.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button type="button" aria-label="Удалить товар из списка заказа">Удалить</button>
-                </td>
-                <td>
-                  <img class="catalog-image" src="img/ice-cream-order_2.jpg" width="33" height="33" alt="img">
-                </td>
-                <td>
-                  Клубничный пломбир с присыпкой из белого шоколада
-                </td>
-                <td>
-                  1,5 кг х 300 руб.
-                </td>
-                <td>
-                  450 руб.
-                </td>
-              </tr>
-            </table>
-            <div>
-              <b class="order-price">Итого: 750 руб.</b>
-              <a href="#" class="button" aria-label="Оформление вашего заказа">Оформить заказ</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <p class="contacts-info">
-        С 10 до 20, ежедневно<br>
-        <span>8 812 450-25-25</span>
-      </p>
+          </nav>
+        </div>
+        <p class="contacts-info">
+          С 10 до 20, ежедневно<br>
+          <span>8 812 450-25-25</span>
+        </p>
+      </div>
     </header>
-    <main class="catalog">
-      <h1>Сливочное мороженое</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html" aria-label="Главная страница сайта Глэйси">Главная</a></li>
-        <li><a href="catalog.html" aria-label="Каталог мороженого">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
-      </ul>
+    <main class="catalog-page">
+      <div class="breadcrumbs-wrapper">
+        <h1>Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html" aria-label="Главная страница сайта Глэйси">Главная</a></li>
+          <li><a href="catalog.html" aria-label="Каталог мороженого">Каталог</a></li>
+          <li class="breadcrumbs-current">Сливочное</li>
+        </ul>
+      </div>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-        <label>
+        <label class="filter-sorting">
           Сортировка:
           <select name="sorting" aria-label="Сортировка продукции">
             <option>по популярности</option>
@@ -107,11 +113,11 @@
             <option>по жирности</option>
           </select>
         </label>
-        <label>
+        <label class="filter-price">
           Цена: 100 руб. - 500 руб.
           <input type="range" min="100" max="500" step="10">
         </label>
-        <fieldset>
+        <fieldset class="filter-fatness">
           <legend>Жирность:</legend>
           <label>
             0%
@@ -130,7 +136,7 @@
             <input type="radio" name="fat-content" value="выше 30%">
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter-fillers">
           <legend>Наполнители:</legend>
           <label>
             шоколадные
@@ -157,112 +163,100 @@
       </form>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img class="catalog-image" src="img/ice-cream-1.jpg" width="267" height="267" alt="img">
-            <p>
-              310 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+          <img class="catalog-image" src="img/ice-cream-1.jpg" width="200" height="200" alt="img">
+          <p>
+            310 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочно-кофейное с кусочками шоколада">
-            <h3>Сливочно-кофейное с кусочками шоколада</h3>
-            <img class="catalog-image" src="img/ice-cream-2.jpg" width="267" height="267" alt="img">
-            <p>
-              380 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочно-кофейное с кусочками шоколада</h3>
+          <img class="catalog-image" src="img/ice-cream-2.jpg" width="200" height="200" alt="img">
+          <p>
+            380 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочно-клубничное с присыпкой из белого шоколада">
-            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img class="catalog-image" src="img/ice-cream-3.jpg" width="267" height="267" alt="img">
-            <p>
-              355 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+          <img class="catalog-image" src="img/ice-cream-3.jpg" width="200" height="200" alt="img">
+          <p>
+            355 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное крем-брюле с карамельной подливкой">
-            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-            <img class="catalog-image" src="img/ice-cream-4.jpg" width="267" height="267" alt="img">
-            <p>
-              415 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+          <img class="catalog-image" src="img/ice-cream-4.jpg" width="200" height="200" alt="img">
+          <p>
+            415 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное с брусничным джемом">
-            <h3>Сливочное с брусничным джемом</h3>
-            <img class="catalog-image" src="img/ice-cream-5.jpg" width="267" height="267" alt="img">
-            <p>
-              325 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное с брусничным джемом</h3>
+          <img class="catalog-image" src="img/ice-cream-5.jpg" width="200" height="200" alt="img">
+          <p>
+            325 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочно-черничное с цельными ягодами черники">
-            <h3>Сливочно-черничное с цельными ягодами черники</h3>
-            <img class="catalog-image" src="img/ice-cream-6.jpg" width="267" height="267" alt="img">
-            <p>
-              410 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочно-черничное с цельными ягодами черники</h3>
+          <img class="catalog-image" src="img/ice-cream-6.jpg" width="200" height="200" alt="img">
+          <p>
+            410 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочно-лимонное с карамельной присыпкой">
-            <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-            <img class="catalog-image" src="img/ice-cream-7.jpg" width="267" height="267" alt="img">
-            <p>
-              375 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+          <img class="catalog-image" src="img/ice-cream-7.jpg" width="200" height="200" alt="img">
+          <p>
+            375 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное с шоколадной стружкой">
-            <h3>Сливочное с шоколадной стружкой</h3>
-            <img class="catalog-image" src="img/ice-cream-8.jpg" width="267" height="267" alt="img">
-            <p>
-              320 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное с шоколадной стружкой</h3>
+          <img class="catalog-image" src="img/ice-cream-8.jpg" width="200" height="200" alt="img">
+          <p>
+            320 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочно-ванильное с кусочками шоколада">
-            <h3>Сливочно-ванильное с кусочками шоколада</h3>
-            <img class="catalog-image" src="img/ice-cream-9.jpg" width="267" height="267" alt="img">
-            <p>
-              440 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочно-ванильное с кусочками шоколада</h3>
+          <img class="catalog-image" src="img/ice-cream-9.jpg" width="200" height="200" alt="img">
+          <p>
+            440 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочноe с ментоловым сиропом">
-            <h3>Сливочноe с ментоловым сиропом</h3>
-            <img class="catalog-image" src="img/ice-cream-10.jpg" width="267" height="267" alt="img">
-            <p>
-              435 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочноe с ментоловым сиропом</h3>
+          <img class="catalog-image" src="img/ice-cream-10.jpg" width="200" height="200" alt="img">
+          <p>
+            435 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное с кусочками черного шоколада">
-            <h3>Сливочное с кусочками черного шоколада</h3>
-            <img class="catalog-image" src="img/ice-cream-11.jpg" width="267" height="267" alt="img">
-            <p>
-              355 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное с кусочками черного шоколада</h3>
+          <img class="catalog-image" src="img/ice-cream-11.jpg" width="200" height="200" alt="img">
+          <p>
+            355 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
         <li class="catalog-item">
-          <a href="#" aria-label="Мороженное Сливочное с мятным сиропом">
-            <h3>Сливочное с мятным сиропом</h3>
-            <img class="catalog-image" src="img/ice-cream-12.jpg" width="267" height="267" alt="img">
-            <p>
-              420 Р<span>/кг</span>
-            </p>
-          </a>
+          <h3>Сливочное с мятным сиропом</h3>
+          <img class="catalog-image" src="img/ice-cream-12.jpg" width="200" height="200" alt="img">
+          <p>
+            420 Р<span>/кг</span>
+          </p>
+          <button class="button quick-review" type="button" aria-label="Просмотреть мороженое">Быстрый просмотр</button>
         </li>
       </ul>
       <ul class="pagination">
