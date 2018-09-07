@@ -39,18 +39,20 @@
                   </ul>
                 </li>
                 <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О компании</a></li>
+                <li><a href="#">О Компании</a></li>
               </ul>
               <ul class="user-navigation">
                 <li class="search-form">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-                    <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205
-                     5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-                  </svg>
+                  <button class="search-button" type="button">Поиск</button>
                   <div class="search-wrapper">
                     <form action="https://echo.htmlacademy.ru" method="post">
-                      <label class="visually-hidden" for="search-form">Поиск</label>
-                      <input class="search-field" id="search-form" type="search" aria-label="Поиск по сайту" placeholder="Что ищем?">
+                      <label class="form-label">
+                        <span class="visually-hidden">Поиск</span>
+                        <input class="search-field form-field" id="search-form" type="search" aria-label="Поиск по сайту" placeholder="Что ищем?">
+                        <p class="search-tip form-tip">
+                          Что ищем?
+                        </p>
+                      </label>
                     </form>
                   </div>
                 </li>
@@ -62,23 +64,35 @@
                     </g>
                   </svg>
                   <button class="login-enter" type="button">Вход</button>
-                  <form action="https://echo.htmlacademy.ru" method="post">
-                    <label>
-                      <span class="visually-hidden">Электронная почта</span>
-                      <input type="email" class="email-field" placeholder="Электронная почта">
-                    </label>
-                    <label>
-                      <span class="visually-hidden">Пароль</span>
-                      <input type="password" class="password-field" placeholder="Пароль">
-                    </label>
-                    <button type="submit" class="button" aria-label="Войти в профиль">Войти</button>
-                    <a href="#" aria-label="Забыли пароль?">
-                      Забыли пароль?
-                    </a>
-                    <a href="#" aria-label="Новая регистрация">
-                      Новая регистрация
-                    </a>
-                  </form>
+                  <div class="login-wrapper">
+                    <form action="https://echo.htmlacademy.ru" method="post">
+                      <label class="form-label">
+                        <span class="visually-hidden">Электронная почта</span>
+                        <input class="mail-field form-field" type="email" class="email-field" placeholder="Электронная почта">
+                        <p class="mail-tip form-tip">
+                          Ваша электронная почта
+                        </p>
+                      </label>
+                      <label class="form-label">
+                        <span class="visually-hidden">Пароль</span>
+                        <input class="password-field form-field" type="password" class="password-field" placeholder="Пароль">
+                        <p class="password-tip form-tip">
+                          Ваш пароль
+                        </p>
+                      </label>
+                      <div class="form-block">
+                        <button type="submit" class="button" aria-label="Войти в профиль">Войти</button>
+                        <div class="login-help">
+                          <a href="#" aria-label="Забыли пароль?">
+                            Забыли пароль?
+                          </a>
+                          <a href="#" aria-label="Новая регистрация">
+                            Новая регистрация
+                          </a>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </li>
                 <li class="basket">
                   <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
@@ -225,7 +239,13 @@
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="email" class="form-field" aria-label="Подпишитесь на нас" placeholder="Электронная почта">
+                <label class="form-label">
+                  <span class="visually-hidden">Электронная почта</span>
+                  <input class="mail-field form-field" type="email" class="email-field" placeholder="Электронная почта">
+                  <p class="mail-tip form-tip">
+                    Ваша электронная почта
+                  </p>
+                </label>
                 <button type="submit" class="button" aria-label="Заявка на подписку">Отправить</button>
               </form>
             </div>
@@ -236,7 +256,7 @@
             <h2 class="visually-hidden">Наши координаты</h2>
             <img src="img/map.jpg" width="1250" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </section>
-          <section class="feedback-form">
+          <section class="feedback">
             <h2 class="visually-hidden">Обратная связь</h2>
             <p>
               Адрес главного офиса<br>
@@ -249,15 +269,28 @@
               (с 10 до 20 ежедневно)
             </p>
             <button class="button">Форма обратной связи</button>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <h3><b>Мы обязательно вам ответим!</b></h3>
-              <button class="close-form" aria-label="Кнопка закрытия формы">X</button>
-              <input type="text" class="form-field" aria-label="Введите Ваше имя" placeholder="Как вас зовут?">
-              <input type="email" class="form-field" aria-label="Введите адрес Вашей электронной почты" placeholder="Ваша почта для ответа?">
-              <textarea class="form-field" rows="5" cols="50">Напишите что-нибудь...</textarea>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <h3 class="form-header"><b>Мы обязательно вам ответим!</b></h3>
+              <button class="close-form" aria-label="Кнопка закрытия формы обратной связи">X</button>
+              <label class="form-label">
+                <span class="visually-hidden">Имя пользователя</span>
+                <input class="name-field form-field" type="email" class="email-field" placeholder="Как вас зовут?">
+                <p class="name-tip form-tip">
+                  Ваше имя
+                </p>
+              </label>
+              <label class="form-label">
+                <span class="visually-hidden">Электронная почта</span>
+                <input class="mail-field form-field" type="email" class="email-field" placeholder="Ваша почта для ответа?">
+                <p class="mail-tip form-tip">
+                  Ваша почта
+                </p>
+              </label>
+              <textarea class="form-field" rows="6" cols="50">Напишите что-нибудь...</textarea>
               <button type="submit" class="button" aria-label="Отправить форму обратной связи">Отправить</button>
             </form>
           </section>
+          <div class="feedback-overlay"></div>
         </div>
       </main>
       <footer class="main-footer">
@@ -291,7 +324,7 @@
         </ul>
         <div class="producer">
           <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Базовый интенсив html/css HTML Academy">
-            <img src="../img/logo-htmlacademy-small.svg" width="150" height="100" alt="HTML Academy">
+            <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="HTML Academy">
           </a>
           <p>
             Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML Academy">HTML Academy</a> © 2017
