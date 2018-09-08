@@ -19,7 +19,7 @@
               <ul class="site-navigation">
                 <li>
                   <a href="catalog.html" class="current-page" aria-label="Каталог мороженого">Каталог</a>
-                  <ul class="catalog-sub-menu visually-hidden">
+                  <ul class="navigation-item catalog-sub-menu visually-hidden">
                     <li>
                       <a href="#" aria-label="Новинки"><b>Новинки</b></a>
                     </li>
@@ -37,8 +37,8 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О Компании</a></li>
+                <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+                <li class="navigation-item"><a href="#">О Компании</a></li>
               </ul>
               <ul class="user-navigation">
                 <li class="search-form">
@@ -48,9 +48,9 @@
                       <label class="form-label">
                         <span class="visually-hidden">Поиск</span>
                         <input class="search-field form-field" id="search-form" type="search" aria-label="Поиск по сайту" placeholder="Что ищем?">
-                        <p class="search-tip form-tip">
+                        <span class="search-tip form-tip">
                           Что ищем?
-                        </p>
+                        </span>
                       </label>
                     </form>
                   </div>
@@ -67,17 +67,17 @@
                     <form action="https://echo.htmlacademy.ru" method="post">
                       <label class="form-label">
                         <span class="visually-hidden">Электронная почта</span>
-                        <input class="mail-field form-field" type="email" class="email-field" placeholder="Электронная почта">
-                        <p class="mail-tip form-tip">
+                        <input class="mail-field form-field" type="email" placeholder="Электронная почта">
+                        <span class="mail-tip form-tip">
                           Ваша электронная почта
-                        </p>
+                        </span>
                       </label>
                       <label class="form-label">
                         <span class="visually-hidden">Пароль</span>
-                        <input class="password-field form-field" type="password" class="password-field" placeholder="Пароль">
-                        <p class="password-tip form-tip">
+                        <input class="password-field form-field" type="password" placeholder="Пароль">
+                        <span class="password-tip form-tip">
                           Ваш пароль
-                        </p>
+                        </span>
                       </label>
                       <div class="form-block">
                         <button type="submit" class="button" aria-label="Войти в профиль">Войти</button>
@@ -176,7 +176,7 @@
           </div>
           <fieldset class="filter-price">
             <div class="price-wrapper">
-              <legend>Цена:</legend>
+              <span>Цена:</span>
               <div class="price-controls">
                 <input id="min-price" name="min-price" type="text" value="100">
                 <label for="min-price" class="min-price" aria-label="Минимальная цена">руб. -</label>

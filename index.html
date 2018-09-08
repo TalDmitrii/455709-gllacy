@@ -18,7 +18,7 @@
             <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина Глэйси">
             <nav class="main-navigation">
               <ul class="site-navigation">
-                <li class="catalog-menu-top">
+                <li class="navigation-item catalog-menu-top">
                   <a href="catalog.html" aria-label="Каталог мороженого">Каталог</a>
                   <ul class="catalog-sub-menu">
                     <li>
@@ -38,8 +38,8 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">О Компании</a></li>
+                <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+                <li class="navigation-item"><a href="#">О Компании</a></li>
               </ul>
               <ul class="user-navigation">
                 <li class="search-form">
@@ -49,9 +49,9 @@
                       <label class="form-label">
                         <span class="visually-hidden">Поиск</span>
                         <input class="search-field form-field" id="search-form" type="search" aria-label="Поиск по сайту" placeholder="Что ищем?">
-                        <p class="search-tip form-tip">
+                        <span class="search-tip form-tip">
                           Что ищем?
-                        </p>
+                        </span>
                       </label>
                     </form>
                   </div>
@@ -68,17 +68,17 @@
                     <form action="https://echo.htmlacademy.ru" method="post">
                       <label class="form-label">
                         <span class="visually-hidden">Электронная почта</span>
-                        <input class="mail-field form-field" type="email" class="email-field" placeholder="Электронная почта">
-                        <p class="mail-tip form-tip">
+                        <input class="mail-field form-field" type="email" placeholder="Электронная почта">
+                        <span class="mail-tip form-tip">
                           Ваша электронная почта
-                        </p>
+                        </span>
                       </label>
                       <label class="form-label">
                         <span class="visually-hidden">Пароль</span>
-                        <input class="password-field form-field" type="password" class="password-field" placeholder="Пароль">
-                        <p class="password-tip form-tip">
+                        <input class="password-field form-field" type="password" placeholder="Пароль">
+                        <span class="password-tip form-tip">
                           Ваш пароль
-                        </p>
+                        </span>
                       </label>
                       <div class="form-block">
                         <button type="submit" class="button" aria-label="Войти в профиль">Войти</button>
@@ -241,10 +241,10 @@
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="form-label">
                   <span class="visually-hidden">Электронная почта</span>
-                  <input class="mail-field form-field" type="email" class="email-field" placeholder="Электронная почта">
-                  <p class="mail-tip form-tip">
+                  <input class="mail-field form-field" type="email" placeholder="Электронная почта">
+                  <span class="mail-tip form-tip">
                     Ваша электронная почта
-                  </p>
+                  </span>
                 </label>
                 <button type="submit" class="button" aria-label="Заявка на подписку">Отправить</button>
               </form>
@@ -274,17 +274,17 @@
               <button class="close-form" aria-label="Кнопка закрытия формы обратной связи">X</button>
               <label class="form-label">
                 <span class="visually-hidden">Имя пользователя</span>
-                <input class="name-field form-field" type="email" class="email-field" placeholder="Как вас зовут?">
-                <p class="name-tip form-tip">
+                <input class="name-field form-field" type="email" placeholder="Как вас зовут?">
+                <span class="name-tip form-tip">
                   Ваше имя
-                </p>
+                </span>
               </label>
               <label class="form-label">
                 <span class="visually-hidden">Электронная почта</span>
-                <input class="mail-field form-field" type="email" class="email-field" placeholder="Ваша почта для ответа?">
-                <p class="mail-tip form-tip">
+                <input class="mail-field form-field" type="email" placeholder="Ваша почта для ответа?">
+                <span class="mail-tip form-tip">
                   Ваша почта
-                </p>
+                </span>
               </label>
               <textarea class="form-field" rows="6" cols="50">Напишите что-нибудь...</textarea>
               <button type="submit" class="button" aria-label="Отправить форму обратной связи">Отправить</button>
