@@ -24,7 +24,7 @@
                       <li>
                         <a href="news.html" aria-label="Новинки"><b>Новинки</b></a>
                       </li>
-                      <li>
+                      <li class="active-item">
                         <a href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a>
                       </li>
                       <li>
@@ -40,12 +40,12 @@
                   </li>
                   <li class="navigation-item">
                     <a href="delivery.html">
-                      <span>Доставка и оплата<span>
+                      <span>Доставка и оплата</span>
                     </a>
                   </li>
                   <li class="navigation-item">
                     <a href="aboutus.html">
-                      <span>О Компании<span>
+                      <span>О Компании</span>
                     </a>
                   </li>
                 </ul>
@@ -170,16 +170,24 @@
             </ul>
           </div>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-            <div class="sorting-wrapper">
-              <label for="sorting">
-                Сортировка:
-              </label>
-              <select name="sorting" id="sorting" aria-label="Сортировка продукции">
-                <option>по популярности</option>
-                <option>сначала недорогие</option>
-                <option>сначала дорогие</option>
-                <option>по жирности</option>
-              </select>
+            <div class="sorting-filter">
+              <p class="select-label">Сортировка:</p>
+              <div class="sorting-wrapper">
+                <label for="select" class="select">
+                  <input class="select-open"type="radio" name="list" value="not_changed" id="select">
+                  <label class="bg" for="bg"></label>
+                  <input type="radio" name="list" value="not_changed" id="bg" checked />
+                  <div class="items">
+                    <input class="select-value" type="radio" name="list" value="second_value" id="list[0]">
+                    <label for="list[0]">по популярности</label>
+                    <input class="select-value" type="radio" name="list" value="first_value" id="list[1]">
+                    <label for="list[1]">по цене</label>
+                    <input class="select-value" type="radio" name="list" value="second_value" id="list[2]">
+                    <label for="list[2]">по жирности</label>
+                    <span class="select-default">по популярности</span>
+                  </div>
+                </label>
+              </div>
             </div>
             <fieldset class="filter-price">
               <div class="price-wrapper">
