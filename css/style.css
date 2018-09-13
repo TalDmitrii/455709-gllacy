@@ -1407,13 +1407,22 @@ img {
 }
 
 .feedback-adress {
-  width: 221px;
+  width: 223px;
 
   margin-bottom: 18px;
 }
 
 .feedback-phone {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #323232;
+
   margin-top: 5px;
+
+  text-decoration: none;
 }
 
 .feedback a {
