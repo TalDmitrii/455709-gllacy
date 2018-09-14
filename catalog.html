@@ -170,25 +170,17 @@
             </ul>
           </div>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="post">
-            <div class="sorting-filter">
-              <p class="select-label">Сортировка:</p>
-              <div class="sorting-wrapper">
-                <label for="select" class="select">
-                  <input class="select-open"type="radio" name="list" value="not_changed" id="select">
-                  <label class="bg" for="bg"></label>
-                  <input type="radio" name="list" value="not_changed" id="bg" checked />
-                  <div class="items">
-                    <input class="select-value" type="radio" name="list" value="second_value" id="list[0]">
-                    <label for="list[0]">по популярности</label>
-                    <input class="select-value" type="radio" name="list" value="first_value" id="list[1]">
-                    <label for="list[1]">по цене</label>
-                    <input class="select-value" type="radio" name="list" value="second_value" id="list[2]">
-                    <label for="list[2]">по жирности</label>
-                    <span class="select-default">по популярности</span>
-                  </div>
-                </label>
-              </div>
-            </div>
+            <div class="filter_sorting">
+							<label for="sorting-label">Сортировка:</label>
+							<div class="select-wrapper">
+								<select class="sorting-select" name="sorting-select" id="sorting-label">
+									<option value="value-1" selected>по популярности</option>
+									<option value="value-2">сначала недорогие</option>
+									<option value="value-3">сначала дорогие</option>
+									<option value="value-4">по жирности</option>
+								</select>
+							</div>
+						</div>
             <fieldset class="filter-price">
               <div class="price-wrapper">
                 <span>Цена:</span>
